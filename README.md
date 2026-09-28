@@ -110,7 +110,7 @@ heart['target'] = heart['target'].replace({
 
 #### Stacked Histogram — Heart Disease Prevalence by Age Group
 
-![Heart Disease Prevalence Across Age Groups](/Users/khineaindrayhtun/.gemini/antigravity-ide/brain/9907dbd7-7117-456c-b8cc-9db76d77556d/plots/age_heart_disease_histogram.png)
+![Heart Disease Prevalence Across Age Groups](plots/age_heart_disease_histogram.png)
 
 **Observation**
 Heart-disease cases (red) are **most concentrated in the 40–65 age range**, with the peak volume occurring around ages 55–60. Below age 35, cases are extremely rare. The ratio of heart disease to no heart disease shifts dramatically: in younger groups, the dark bars (no disease) dominate, while in the 50–60 range, the red (disease) segment grows to roughly **60–65%** of the total bar height.
@@ -120,7 +120,7 @@ Age is clearly associated with heart-disease prevalence — but the relationship
 
 #### Detailed Age Breakdown — Count per Year
 
-![Detailed Heart Disease Count by Age](/Users/khineaindrayhtun/.gemini/antigravity-ide/brain/9907dbd7-7117-456c-b8cc-9db76d77556d/plots/age_count_detailed.png)
+![Detailed Heart Disease Count by Age](plots/age_count_detailed.png)
 
 **Observation**
 This granular view reveals that **age 58 is the single most represented age** in the dataset (44 heart disease + 31 no heart disease = 75 patients), followed by ages 54 and 52. Heart disease counts consistently **exceed or match** no-heart-disease counts for nearly every age between 41 and 64.
@@ -136,7 +136,7 @@ The year-by-year breakdown confirms the histogram pattern with more precision. T
 
 #### Count Plot — Heart Disease by Gender
 
-![Heart Disease Count by Gender](/Users/khineaindrayhtun/.gemini/antigravity-ide/brain/9907dbd7-7117-456c-b8cc-9db76d77556d/plots/gender_heart_disease_count.png)
+![Heart Disease Count by Gender](plots/gender_heart_disease_count.png)
 
 **Observation**
 Males in the dataset outnumber females roughly **2.3:1** (≈710 males vs. ≈310 females). Among males, the split is approximately **410 no-disease vs. 300 disease** (≈42% prevalence). Among females, it's approximately **85 no-disease vs. 225 disease** (≈73% prevalence).
@@ -151,7 +151,7 @@ Either way, this underscores that **sex must be included as a stratification var
 
 #### Age vs. Blood Pressure by Sex — Regression Trends
 
-![Age vs Blood Pressure by Sex](/Users/khineaindrayhtun/.gemini/antigravity-ide/brain/9907dbd7-7117-456c-b8cc-9db76d77556d/plots/age_vs_bp_by_sex.png)
+![Age vs Blood Pressure by Sex](plots/age_vs_bp_by_sex.png)
 
 **Observation**
 Both males and females show a **positive linear trend** between age and resting blood pressure. The regression lines are nearly parallel, with females tracking slightly higher on average in the 50–70 age range. Variance around the regression is high for both groups, indicating that age alone is a weak predictor of blood pressure.
@@ -193,7 +193,7 @@ Notably, `chol` (cholesterol) shows **surprisingly weak correlations** with most
 
 #### Max Heart Rate vs. Age — With Theoretical Normal Line
 
-![Max Heart Rate vs Age by Sex](/Users/khineaindrayhtun/.gemini/antigravity-ide/brain/9907dbd7-7117-456c-b8cc-9db76d77556d/plots/max_heart_rate_vs_age_line.png)
+![Max Heart Rate vs Age by Sex](plots/max_heart_rate_vs_age_line.png)
 
 **Observation**
 For **both males and females**, patients diagnosed with heart disease (orange dashed line) consistently achieve **higher maximum heart rates** than their no-disease counterparts (blue solid line) at the same age. The theoretical normal max heart rate (red dashed line, calculated as 220 − age) serves as a ceiling reference. Heart-disease patients track closer to this ceiling, while no-disease patients fall further below it.
@@ -219,7 +219,7 @@ Contrary to popular expectation, **cholesterol and blood pressure are only weakl
 
 #### Age vs. Cholesterol — Hexbin Density
 
-![Age vs Cholesterol Hexbin](/Users/khineaindrayhtun/.gemini/antigravity-ide/brain/9907dbd7-7117-456c-b8cc-9db76d77556d/plots/age_vs_chol_hexbin.png)
+![Age vs Cholesterol Hexbin](plots/age_vs_chol_hexbin.png)
 
 **Observation**
 The hexbin density map shows that the **highest concentration of patients** falls in the 45–60 age range with cholesterol levels between 200–280 mg/dl. The cholesterol distribution is roughly **right-skewed**, with a long tail extending to 400+ mg/dl. The marginal histograms confirm that both age and cholesterol peak in their respective mid-ranges.
@@ -229,7 +229,7 @@ The density clustering in the 200–280 mg/dl cholesterol band is clinically sig
 
 #### Blood Pressure vs. Heart Rate — Faceted by Sex & Chest Pain Type
 
-![BP vs Heart Rate Faceted](/Users/khineaindrayhtun/.gemini/antigravity-ide/brain/9907dbd7-7117-456c-b8cc-9db76d77556d/plots/bp_vs_thalach_faceted.png)
+![BP vs Heart Rate Faceted](plots/bp_vs_thalach_faceted.png)
 
 **Observation**
 This faceted view breaks down blood pressure vs. max heart rate by **sex (rows)** and **chest pain type (columns)**, colored by heart disease status. Key patterns:
@@ -248,7 +248,7 @@ The faceted structure reveals that the relationship between hemodynamic variable
 
 #### Age vs. ST Depression (Oldpeak) — KDE by Sex
 
-![Age vs Oldpeak KDE](/Users/khineaindrayhtun/.gemini/antigravity-ide/brain/9907dbd7-7117-456c-b8cc-9db76d77556d/plots/age_vs_oldpeak_kde.png)
+![Age vs Oldpeak KDE](plots/age_vs_oldpeak_kde.png)
 
 **Observation**
 The kernel density estimate reveals distinct distributions for males (blue) and females (orange):
@@ -261,7 +261,7 @@ The sex-stratified KDE confirms that **ST depression during exercise manifests d
 
 #### Age vs. Max Heart Rate — Joint Distribution by Heart Disease Status
 
-![Age vs Max Heart Rate Joint](/Users/khineaindrayhtun/.gemini/antigravity-ide/brain/9907dbd7-7117-456c-b8cc-9db76d77556d/plots/age_vs_thalach_joint.png)
+![Age vs Max Heart Rate Joint](plots/age_vs_thalach_joint.png)
 
 **Observation**
 The joint histogram reveals two visually separable clusters:
@@ -274,7 +274,7 @@ This joint distribution is arguably the **most important single visualization** 
 
 #### Chest Pain Type × Exercise Angina — Multivariate Scatter for Heart Disease Patients
 
-![Chest Pain Analysis](/Users/khineaindrayhtun/.gemini/antigravity-ide/brain/9907dbd7-7117-456c-b8cc-9db76d77556d/plots/chest_pain_relplot.png)
+![Chest Pain Analysis](plots/chest_pain_relplot.png)
 
 **Observation**
 Among heart-disease patients only, this faceted scatter (age vs. resting BP, sized by thalach, colored by exercise angina) shows:
